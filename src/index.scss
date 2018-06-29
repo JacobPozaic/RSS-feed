@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#222222;
+}
+
+.feeds {
+    color: #ffffff;
+
+    p {
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    &-subscribe {
+        > form {
+            display: flex;
+            width:50rem;
+        }
+    }  
+
+    &-subscriptions {
+        &-list {
+            display: block;
+            list-style: none;
+            margin-left: 0;
+            > li {
+                display: flex;
+                align-items: none;
+                justify-content: space-between;
+                width: 25rem;
+                &:not(:last-of-type) {
+                    margin-bottom: 0.25rem;
+                }
+            }
+        }
+    }
+}
+
+.news {
+    h1 {
+        border-top: 1px solid #BADA55;
+        font-size: 3rem;
+    }
+    
+    &-items {
+        list-style: none;
+        padding-left: 2rem;
+    }
+}
